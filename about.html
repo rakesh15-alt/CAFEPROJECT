@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About | Hell Cafe</title>
+<style>
+body{
+  margin:0;
+  font-family:Poppins,sans-serif;
+  background:url('') center/cover no-repeat;
+  color:#fff;
+}
+.overlay{
+  background:rgba(0,0,0,.75);
+  min-height:100vh;
+  padding:60px;
+}
+h1{color:#c97c5d;text-shadow:0 0 20px #c97c5d}
+.back-btn{
+  position:fixed;
+  top:20px;
+  left:20px;
+  padding:10px 20px;
+  border:none;
+  border-radius:25px;
+  background:#c97c5d;
+  color:#000;
+  font-weight:600;
+  cursor:pointer;
+  box-shadow:0 0 20px rgba(201,124,93,.8);
+  transition:.3s;
+  z-index:999;
+}
+
+.back-btn:hover{
+  animation:glow 1.2s infinite alternate;
+}
+
+@keyframes glow{
+  from{box-shadow:0 0 15px #c97c5d}
+  to{box-shadow:0 0 45px #ff9f68}
+}
+
+
+</style>
+</head>
+
+<body>
+    <button class="back-btn" onclick="history.back()">← Back</button>
+
+<div class="overlay">
+<h1>About XMAS Cafe</h1>
+<p>
+Born from caffeine and chaos.  
+HELL CAFE is where coffee meets darkness and neon nights.
+</p>
+</div>
+</body>
+</html>

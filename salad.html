@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HELL CAFE | Coffee</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins,sans-serif;
+}
+
+body{
+  background:url('') center/cover fixed no-repeat; /* PASTE PAGE BACKGROUND */
+  color:#fff;
+}
+
+.overlay{
+  background:rgba(0,0,0,.85);
+  min-height:100vh;
+  padding:90px 50px;
+}
+
+/* BACK BUTTON */
+.back-btn{
+  position:fixed;
+  top:20px;
+  left:20px;
+  padding:10px 22px;
+  border:none;
+  border-radius:25px;
+  background:#c97c5d;
+  color:#000;
+  font-weight:600;
+  cursor:pointer;
+  box-shadow:0 0 25px rgba(201,124,93,.9);
+  transition:.3s;
+  z-index:999;
+}
+.back-btn:hover{
+  box-shadow:0 0 45px #ff9f68;
+}
+
+/* TITLE */
+h1{
+  text-align:center;
+  font-size:42px;
+  margin-bottom:60px;
+  color:#c97c5d;
+  text-shadow:0 0 30px #c97c5d;
+}
+
+/* GRID */
+.menu-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:40px;
+  max-width:1200px;
+  margin:auto;
+}
+
+/* CARD */
+.menu-card{
+  position:relative;
+  border-radius:20px;
+  overflow:hidden;
+  cursor:pointer;
+  box-shadow:0 20px 40px rgba(0,0,0,.7);
+  transition:.4s;
+}
+.menu-card:hover{
+  transform:translateY(-10px) scale(1.03);
+  box-shadow:0 30px 60px rgba(201,124,93,.8);
+}
+
+.menu-card img{
+  width:100%;
+  height:340px;
+  object-fit:cover;
+}
+
+/* OVERLAY INFO */
+.menu-info{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  padding:20px;
+  background:linear-gradient(to top,rgba(0,0,0,.85),transparent);
+}
+
+.menu-info h3{
+  font-size:22px;
+  margin-bottom:5px;
+}
+
+.menu-info span{
+  color:#ff9f68;
+  font-weight:600;
+  text-shadow:0 0 15px #ff9f68;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+  .overlay{padding:80px 20px}
+  h1{font-size:32px}
+}
+@media (max-width: 768px){
+
+  body{
+    background-attachment:scroll;
+  }
+
+  .overlay,
+  .section{
+    padding:60px 20px;
+  }
+
+  h1{
+    font-size:30px;
+  }
+
+  .header{
+    padding:15px 20px;
+  }
+
+  .back-btn{
+    padding:8px 16px;
+    font-size:14px;
+  }
+
+  .menu-card,
+  .card{
+    border-radius:16px;
+  }
+}
+
+a, button{
+  -webkit-tap-highlight-color:transparent;
+}  
+html{
+  scroll-behavior:smooth;
+}
+ img{
+  max-width:100%;
+  display:block;
+}
+</style>
+</head>
+
+<body>
+
+<button class="back-btn" onclick="history.back()">← Back</button>
+
+<div class="overlay">
+<h1>🥗 SALAD MENU</h1>
+
+<div class="menu-grid">
+
+  <div class="menu-card">
+    <img src="images/salad2.jpeg">
+    <div class="menu-info">
+      <h3>Classic Caesar Salad</h3>
+      <span>₹120</span>
+    </div>
+  </div>
+
+  <div class="menu-card">
+    <img src="images/salad3.jpeg">
+    <div class="menu-info">
+      <h3>Caesar Salad with Grilled Chicken</h3>
+      <span>₹180</span>
+    </div>
+  </div>
+
+  <div class="menu-card">
+    <img src="images/salad4.jpeg">
+    <div class="menu-info">
+      <h3>Spicy Chickpea Salad</h3>
+      <span>₹200</span>
+    </div>
+  </div>
+
+  <div class="menu-card">
+    <img src="images/salad5.jpeg">
+    <div class="menu-info">
+      <h3>Avocado Quinoa Bowl</h3>
+      <span>₹220</span>
+    </div>
+  </div>
+  <div class="menu-card">
+    <img src="images/salad6.jpeg">
+    <div class="menu-info">
+      <h3>Grilled Veggie Salad</h3>
+      <span>₹220</span>
+    </div>
+  </div>
+  <div class="menu-card">
+    <img src="images/starter9.jpeg">
+    <div class="menu-info">
+      <h3>Paneer Tikka Salad</h3>
+      <span>₹220</span>
+    </div>
+  </div>
+
+</div>
+</div>
+
+</body>
+</html>

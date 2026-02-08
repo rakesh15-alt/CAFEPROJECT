@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HELL CAFE | Menu</title>
+<style>
+body{
+  margin:0;
+  font-family:Poppins,sans-serif;
+  background:url('') center/cover fixed no-repeat;
+  color:#fff;
+}
+.overlay{
+  background:rgba(0,0,0,.75);
+  min-height:100vh;
+  padding:40px;
+}
+h1{text-align:center;color:#c97c5d;text-shadow:0 0 20px #c97c5d}
+.menu{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+.card{
+  background:rgba(20,15,10,.8);
+  padding:25px;
+  border-radius:20px;
+  text-align:center;
+  transition:.3s;
+}
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 0 25px rgba(201,124,93,.8);
+}
+a{color:#ff9f68;text-decoration:none}
+.back-btn{
+  position:fixed;
+  top:20px;
+  left:20px;
+  padding:10px 20px;
+  border:none;
+  border-radius:25px;
+  background:#c97c5d;
+  color:#000;
+  font-weight:600;
+  cursor:pointer;
+  box-shadow:0 0 20px rgba(201,124,93,.8);
+  transition:.3s;
+  z-index:999;
+}
+
+.back-btn:hover{
+  animation:glow 1.2s infinite alternate;
+}
+
+@keyframes glow{
+  from{box-shadow:0 0 15px #c97c5d}
+  to{box-shadow:0 0 45px #ff9f68}
+}
+
+.menu-card{
+  position:relative;
+  height:220px;
+  border-radius:22px;
+  overflow:hidden;
+  text-decoration:none;
+  box-shadow:0 0 20px rgba(201,124,93,.5);
+  transition:.4s;
+  border:2px solid rgba(201,124,93,.4);
+}
+
+.menu-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:brightness(.75);
+  transition:.4s;
+}
+
+.menu-card span{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+  font-weight:600;
+  color:#ffb089;
+  text-shadow:0 0 15px #c97c5d;
+  background:linear-gradient(
+    rgba(0,0,0,.2),
+    rgba(0,0,0,.6)
+  );
+}
+
+/* Hover magic */
+.menu-card:hover{
+  transform:translateY(-10px) scale(1.03);
+  box-shadow:
+    0 0 25px #c97c5d,
+    0 0 60px rgba(201,124,93,.8);
+}
+
+.menu-card:hover img{
+  filter:brightness(1);
+  transform:scale(1.1);
+}
+
+@media(max-width:600px){
+  .menu-card{
+    height:180px;
+  }
+  .menu-card span{
+    font-size:18px;
+  }
+  .overlay{
+    padding:30px 20px;
+  }
+}
+
+.menu-card::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  border-radius:22px;
+  box-shadow:0 0 25px #c97c5d;
+  opacity:.4;
+  animation:pulse 2.5s infinite alternate;
+}
+
+@keyframes pulse{
+  from{opacity:.3}
+  to{opacity:.8}
+}
+
+</style>
+</head>
+
+<body>
+    <button class="back-btn" onclick="history.back()">← Back</button>
+
+<div class="overlay">
+<h1>HELL CAFE MENU</h1>
+
+<div class="menu">
+
+  <a href="starter.html" class="menu-card">
+    <img src="images/starter2.jpeg" alt="Starters">
+    <span>🔥 Starters</span>
+  </a>
+
+  <a href="salad.html" class="menu-card">
+    <img src="images/salad2.jpeg" alt="Salads">
+    <span>🥗 Salads</span>
+  </a>
+
+  <a href="drink.html" class="menu-card">
+    <img src="images/drinks2.jpeg" alt="Drinks">
+    <span>🥤 Drinks</span>
+  </a>
+
+  <a href="combo.html" class="menu-card">
+    <img src="images/combo1.jpeg" alt="Combos">
+    <span>🍱 Combos</span>
+  </a>
+
+  <a href="coffee.html" class="menu-card">
+    <img src="images/coffee8.jpeg" alt="Coffee">
+    <span>☕ Coffee</span>
+  </a>
+
+</div>
+
+
+</div>
+</body>
+</html>
