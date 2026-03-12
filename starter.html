@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HELL CAFE | Starters</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+min-height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.85),rgba(0,0,0,.85)),
+url('');
+background-size:cover;
+background-position:center;
+color:#fff;
+}
+
+/* HEADER */
+.header{
+position:sticky;
+top:0;
+z-index:999;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+background:rgba(0,0,0,.65);
+backdrop-filter:blur(10px);
+}
+
+.logo{
+font-family:'Orbitron',sans-serif;
+font-size:26px;
+font-weight:800;
+}
+
+.logo span{
+color:#c97c5d;
+text-shadow:0 0 20px #c97c5d;
+}
+
+.header a{
+text-decoration:none;
+padding:10px 24px;
+border-radius:25px;
+background:#c97c5d;
+color:#000;
+font-weight:600;
+box-shadow:0 0 25px rgba(201,124,93,.9);
+transition:.3s;
+}
+
+.header a:hover{
+box-shadow:0 0 45px #ff9f68;
+transform:scale(1.05);
+}
+
+/* SECTION */
+
+.section{
+padding:90px 60px;
+text-align:center;
+}
+
+.section h1{
+font-size:44px;
+margin-bottom:60px;
+color:#c97c5d;
+text-shadow:0 0 30px #c97c5d;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+max-width:1200px;
+margin:auto;
+}
+
+/* CARD */
+
+.card{
+position:relative;
+height:320px;
+border-radius:22px;
+overflow:hidden;
+cursor:pointer;
+box-shadow:0 20px 40px rgba(0,0,0,.7);
+transition:.45s;
+}
+
+.card:hover{
+transform:translateY(-12px) scale(1.04);
+box-shadow:0 35px 70px rgba(201,124,93,.85);
+}
+
+/* IMAGE */
+
+.card img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:.6s;
+}
+
+.card:hover img{
+transform:scale(1.15);
+}
+
+/* INFO */
+
+.card-info{
+position:absolute;
+bottom:-100%;
+width:100%;
+padding:22px;
+background:linear-gradient(to top,rgba(0,0,0,.9),transparent);
+transition:.45s;
+}
+
+.card:hover .card-info{
+bottom:0;
+}
+
+.card-info h4{
+font-size:22px;
+margin-bottom:6px;
+}
+
+.card-info span{
+color:#ff9f68;
+font-weight:600;
+text-shadow:0 0 15px #ff9f68;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+.header{
+flex-direction:column;
+gap:15px;
+padding:20px;
+}
+
+.section{
+padding:80px 20px
+}
+
+.section h1{
+font-size:34px
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<div class="logo">HELL <span>CAFE</span></div>
+<a href="menu.html">← Back</a>
+</div>
+
+<section class="section">
+
+<h1>🔥 Starters</h1>
+
+<div class="grid">
+
+<div class="card">
+<img src="images/starter2.jpeg">
+<div class="card-info">
+<h4>Crispy French Fries</h4>
+<span>₹120</span>
+</div>
+</div>
+
+<div class="card">
+<img src="images/starter3.jpeg">
+<div class="card-info">
+<h4>Chilli Paneer</h4>
+<span>₹180</span>
+</div>
+</div>
+
+<div class="card">
+<img src="images/starter4.jpeg">
+<div class="card-info">
+<h4>Paneer Tikka</h4>
+<span>₹200</span>
+</div>
+</div>
+
+<div class="card">
+<img src="images/starter5.jpeg">
+<div class="card-info">
+<h4>Veg Spring Rolls</h4>
+<span>₹220</span>
+</div>
+</div>
+
+<div class="card">
+<img src="images/starter6.jpeg">
+<div class="card-info">
+<h4>Cheese Balls</h4>
+<span>₹220</span>
+</div>
+</div>
+
+<div class="card">
+<img src="images/starter7.jpeg">
+<div class="card-info">
+<h4>Peri-Peri Fries</h4>
+<span>₹220</span>
+</div>
+</div>
+
+<div class="card">
+<img src="images/starter8.jpeg">
+<div class="card-info">
+<h4>Veg Manchurian</h4>
+<span>₹220</span>
+</div>
+</div>
+
+<div class="card">
+<img src="images/starter9.jpeg">
+<div class="card-info">
+<h4>Momo</h4>
+<span>₹220</span>
+</div>
+</div>
+
+</div>
+</section>
+
+</body>
+</html>
