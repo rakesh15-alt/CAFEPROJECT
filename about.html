@@ -1,58 +1,248 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>About | Hell Cafe</title>
-<style>
-body{
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Orbitron&display=swap" rel="stylesheet">
+<style>*{
   margin:0;
-  font-family:Poppins,sans-serif;
-  background:url('') center/cover no-repeat;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
   color:#fff;
+  background:#0b0a08;
 }
-.overlay{
-  background:rgba(0,0,0,.75);
-  min-height:100vh;
-  padding:60px;
+
+/* HEADER SAME THEME */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px 60px;
+  background:rgba(0,0,0,.6);
+  backdrop-filter:blur(10px);
 }
-h1{color:#c97c5d;text-shadow:0 0 20px #c97c5d}
-.back-btn{
-  position:fixed;
-  top:20px;
-  left:20px;
-  padding:10px 20px;
-  border:none;
+
+.logo{
+  font-family:'Orbitron',sans-serif;
+  font-size:26px;
+  font-weight:800;
+}
+.logo span{
+  color:#c97c5d;
+  text-shadow:0 0 15px #c97c5d;
+}
+
+nav a{
+  margin:0 10px;
+  text-decoration:none;
+  color:#ccc;
+  padding:10px 18px;
   border-radius:25px;
+  transition:.3s;
+}
+nav a:hover{
   background:#c97c5d;
   color:#000;
-  font-weight:600;
-  cursor:pointer;
-  box-shadow:0 0 20px rgba(201,124,93,.8);
-  transition:.3s;
-  z-index:999;
+  box-shadow:0 0 20px rgba(201,124,93,.9);
 }
 
-.back-btn:hover{
-  animation:glow 1.2s infinite alternate;
+/* STORY SECTIONS */
+.story{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:40px;
+  position:relative;
 }
 
-@keyframes glow{
-  from{box-shadow:0 0 15px #c97c5d}
-  to{box-shadow:0 0 45px #ff9f68}
+/* BACKGROUNDS */
+.section1{
+  background:
+  linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+  url('images/aboutsectiontheme.jpeg');
+  background-size:cover;
 }
 
+.section2{
+  background:
+  linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+  url('images/aboutsectiontheme.jpeg');
+  background-size:cover;
+}
 
-</style>
+.section3{
+  background:
+  linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+  url('images/aboutsectiontheme.jpeg');
+  background-size:cover;
+}
+
+/* GLASS CARD (OWNER BOX) */
+.glass-card{
+  background:rgba(255,255,255,0.05);
+  padding:30px;
+  border-radius:20px;
+  backdrop-filter:blur(15px);
+  max-width:400px;
+  box-shadow:0 0 30px rgba(201,124,93,.4);
+}
+
+.owner-img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:20px;
+  border:3px solid #c97c5d;
+}
+
+/* TEXT BLOCK */
+.text{
+  max-width:600px;
+}
+
+.text h2{
+  font-size:42px;
+  color:#c97c5d;
+  text-shadow:0 0 25px #c97c5d;
+}
+
+.text p{
+  margin-top:15px;
+  color:#ddd;
+  font-size:18px;
+}
+
+/* ANIMATION */
+.reveal{
+  opacity:0;
+  transform:translateY(60px);
+  transition:1s;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  color:#777;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .text h2{
+    font-size:30px;
+  }
+
+  .text p{
+    font-size:15px;
+  }
+
+  .glass-card{
+    padding:20px;
+  }
+
+}</style>
 </head>
 
 <body>
-    <button class="back-btn" onclick="history.back()">← Back</button>
 
-<div class="overlay">
-<h1>About XMAS Cafe</h1>
-<p>
-Born from caffeine and chaos.  
-HELL CAFE is where coffee meets darkness and neon nights.
+<header>
+  <div class="logo">Cafe<span>X</span></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- SECTION 1 (OWNER INTRO) -->
+<section class="story section1">
+
+  <div class="glass-card reveal">
+    <img src="images/owner.jpeg" class="owner-img">
+    <h2>The Vision</h2>
+    <p>
+    <p>
+    <p>
+This café didn’t begin as a business plan—it started as a feeling ☕✨. 
+A late-night idea 🌙, a quiet dream to build something meaningful. 
+The goal was simple: create a space where people could slow down, 
+connect 🤝, and enjoy more than just coffee. Every detail, from the 
+lighting 💡 to the aroma 🌿, was shaped with care to make this place 
+feel warm, personal, and real.
 </p>
-</div>
+    </p>
+  </div>
+
+</section>
+
+<!-- SECTION 2 -->
+<section class="story section2">
+  <div class="text reveal">
+    <h2>Where It Started</h2>
+    <p>
+      <p>
+<p>
+It all started small 🌱, with limited resources but unlimited belief. 
+There were long nights 🌙, trial and error, and moments of doubt, 
+but giving up was never an option 💪. Each step forward came from 
+passion and persistence, slowly turning a simple setup into 
+something that began to attract people and build its own identity ✨.
+</p>
+</p>
+    </p>
+  </div>
+</section>
+
+<!-- SECTION 3 -->
+<section class="story section3">
+  <div class="text reveal">
+    <h2>The Experience</h2>
+    <p>
+      <p>
+<p>
+Today, this café is more than just a place to grab coffee ☕. 
+It’s where conversations happen 💬, ideas grow 💡, and people find 
+comfort in small moments. Whether you're working 💻, relaxing 🌿, 
+or meeting someone 🤝, the space is designed to feel welcoming, 
+calm, and a little bit special every time ✨.
+</p>
+</p>
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2026 CafeX. All rights reserved.
+</footer>
+
+<script>function reveal(){
+  let reveals = document.querySelectorAll(".reveal");
+
+  reveals.forEach((el)=>{
+    let windowHeight = window.innerHeight;
+    let elementTop = el.getBoundingClientRect().top;
+    let visible = 120;
+
+    if(elementTop < windowHeight - visible){
+      el.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", reveal);</script>
 </body>
 </html>
